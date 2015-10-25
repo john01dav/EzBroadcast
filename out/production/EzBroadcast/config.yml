@@ -1,0 +1,15 @@
+broadcastsets: #you can have as many or as few broadcast sets as you want, you can even have 0 if you so desire. Each broadcast set can have it's own special properties
+  default: #a broadcast set called default
+    type: standard #nothing special here
+    prefix: '&c[&4EzBroadcast&c]&a ' #All messages in this broadcast set will be prefixed with this, if you want no prefix set it to an empty string
+    interval: 120.0 #this broadcast set will broadcast a message every 2 minutes, or 120 seconds, decimal places are allowed and will be accurate to 1/20th of a second if you have 20 tps
+    messages: #what messages should be in this broadcast set, color codes work here too
+     - 'Come buy some amazing ranks at &1http://store.example.com/&r&a!'
+     - 'Did you know that we have a brand new feature called feature x?!'
+  staffnag: #another broadcast set, this one is called staffnag
+    type: permissioned #only players with the permission ezbroadcast.set.staffnag can see messages in this set, replace 'staffnag' with the name of a broadcast set to determine the permission for other broadcast sets
+    prefix: '&9[&1Staff Reminder&9]&c '  #All messages in this broadcast set will be prefixed with this, if you want no prefix set it to an empty string
+    interval: 60 #this broadcast set will broadcast a message every 1 minute, or 60 seconds, decimal places are allowed and will be accurate to 1/20th of a second if you have 20 tps
+    messages: #what messages should be in this broadcast set, color codes work here too
+     - 'Do not forget to ban bad players!'
+     - 'Do not forget to mute spammers to nag for staff!'
